@@ -17,6 +17,7 @@ class DVOrderViewController: UIViewController {
     var menuItemArray = [Item]()
     var selectedItems = [Item]()
     var customizedItems = [CustomizedItem]()
+    var nextController: DVDetailViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -149,8 +150,8 @@ extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, Con
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetail" {
-            guard let controller = segue.destination as? DVDetailViewController else { return }
-            controller.customizedItems = customizedItems
+            nextController = segue.destination as? DVDetailViewController
+            nextController?.customizedItems = customizedItems
         }
     }
 }
