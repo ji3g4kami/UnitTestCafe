@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kEG-g7-fTO">
-                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="170"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="mYk-eV-TmS"/>
+                                    <constraint firstAttribute="height" constant="170" id="mYk-eV-TmS"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MFe-qQ-QhT">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MFe-qQ-QhT">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -41,10 +41,18 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MDt-Vq-sLI">
+                                <rect key="frame" x="0.0" y="234" width="375" height="433"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="MDt-Vq-sLI" firstAttribute="leading" secondItem="zwJ-XP-6CL" secondAttribute="leading" id="2Dh-za-BgT"/>
                             <constraint firstItem="kEG-g7-fTO" firstAttribute="top" secondItem="zwJ-XP-6CL" secondAttribute="top" id="Vv3-fA-gnz"/>
+                            <constraint firstItem="MDt-Vq-sLI" firstAttribute="trailing" secondItem="zwJ-XP-6CL" secondAttribute="trailing" id="ePz-N8-4D1"/>
+                            <constraint firstItem="zwJ-XP-6CL" firstAttribute="bottom" secondItem="MDt-Vq-sLI" secondAttribute="bottom" id="gZb-ZL-IBY"/>
+                            <constraint firstItem="MDt-Vq-sLI" firstAttribute="top" secondItem="kEG-g7-fTO" secondAttribute="bottom" id="lOv-8H-yHv"/>
                             <constraint firstItem="kEG-g7-fTO" firstAttribute="trailing" secondItem="zwJ-XP-6CL" secondAttribute="trailing" id="ycU-Ju-RRa"/>
                             <constraint firstItem="kEG-g7-fTO" firstAttribute="leading" secondItem="zwJ-XP-6CL" secondAttribute="leading" id="zwQ-mI-fCG"/>
                         </constraints>

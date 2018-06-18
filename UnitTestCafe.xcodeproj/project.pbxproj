@@ -19,6 +19,10 @@
 		142BC94F20D755BC00422B2D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94E20D755BC00422B2D /* Detail.storyboard */; };
 		142BC95220D757A900422B2D /* DVOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95120D757A900422B2D /* DVOrderViewController.swift */; };
 		142BC95520D7583B00422B2D /* DVDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95420D7583B00422B2D /* DVDetailViewController.swift */; };
+		142BC95820D75AA600422B2D /* WillSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95620D75AA600422B2D /* WillSelectCell.swift */; };
+		142BC95920D75AA600422B2D /* WillSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142BC95720D75AA600422B2D /* WillSelectCell.xib */; };
+		142BC95C20D75ED000422B2D /* DVStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95B20D75ED000422B2D /* DVStruct.swift */; };
+		142BC95E20D75FC000422B2D /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95D20D75FC000422B2D /* FirebaseManager.swift */; };
 		4674A45001EFB1CA65FD2E38 /* Pods_UnitTestCafeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCD10DC75E76D9B014E4F4E /* Pods_UnitTestCafeTests.framework */; };
 		6042B0E6D2FF14D2DFD997F2 /* Pods_UnitTestCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F31DE056474ABE4F7024D /* Pods_UnitTestCafe.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +53,10 @@
 		142BC94E20D755BC00422B2D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		142BC95120D757A900422B2D /* DVOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVOrderViewController.swift; sourceTree = "<group>"; };
 		142BC95420D7583B00422B2D /* DVDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDetailViewController.swift; sourceTree = "<group>"; };
+		142BC95620D75AA600422B2D /* WillSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillSelectCell.swift; sourceTree = "<group>"; };
+		142BC95720D75AA600422B2D /* WillSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WillSelectCell.xib; sourceTree = "<group>"; };
+		142BC95B20D75ED000422B2D /* DVStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVStruct.swift; sourceTree = "<group>"; };
+		142BC95D20D75FC000422B2D /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		2FFE8C5964D7C76EC1B16063 /* Pods-UnitTestCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestCafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestCafe/Pods-UnitTestCafe.debug.xcconfig"; sourceTree = "<group>"; };
 		4C1F31DE056474ABE4F7024D /* Pods_UnitTestCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCD10DC75E76D9B014E4F4E /* Pods_UnitTestCafeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestCafeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +121,7 @@
 				142BC94A20D754FB00422B2D /* View */,
 				142BC94B20D7550000422B2D /* Controller */,
 				142BC94820D754D900422B2D /* Storyboard */,
+				142BC95A20D75EB100422B2D /* Utilities */,
 				142BC92520D7435900422B2D /* AppDelegate.swift */,
 				142BC92C20D7435C00422B2D /* Assets.xcassets */,
 				142BC94520D7492700422B2D /* GoogleService-Info.plist */,
@@ -144,6 +153,7 @@
 		142BC94920D754F100422B2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				142BC95D20D75FC000422B2D /* FirebaseManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +161,8 @@
 		142BC94A20D754FB00422B2D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				142BC95620D75AA600422B2D /* WillSelectCell.swift */,
+				142BC95720D75AA600422B2D /* WillSelectCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +191,14 @@
 				142BC95420D7583B00422B2D /* DVDetailViewController.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		142BC95A20D75EB100422B2D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				142BC95B20D75ED000422B2D /* DVStruct.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		8AAFBF0BF90708AB5E839F9F /* Pods */ = {
@@ -285,6 +305,7 @@
 				142BC92D20D7435C00422B2D /* Assets.xcassets in Resources */,
 				142BC92B20D7435900422B2D /* Main.storyboard in Resources */,
 				142BC94F20D755BC00422B2D /* Detail.storyboard in Resources */,
+				142BC95920D75AA600422B2D /* WillSelectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +327,18 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTestCafe/Pods-UnitTestCafe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +441,10 @@
 			files = (
 				142BC92820D7435900422B2D /* TabBarViewController.swift in Sources */,
 				142BC92620D7435900422B2D /* AppDelegate.swift in Sources */,
+				142BC95E20D75FC000422B2D /* FirebaseManager.swift in Sources */,
+				142BC95C20D75ED000422B2D /* DVStruct.swift in Sources */,
 				142BC95220D757A900422B2D /* DVOrderViewController.swift in Sources */,
+				142BC95820D75AA600422B2D /* WillSelectCell.swift in Sources */,
 				142BC95520D7583B00422B2D /* DVDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

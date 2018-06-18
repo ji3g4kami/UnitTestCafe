@@ -7,6 +7,9 @@ target 'UnitTestCafe' do
 
   # Pods for UnitTestCafe
   pod 'Firebase/Core'
+  pod 'CodableFirebase'
+  pod 'FirebaseDatabase'
+  pod 'SDWebImage'
 
   target 'UnitTestCafeTests' do
     inherit! :search_paths
