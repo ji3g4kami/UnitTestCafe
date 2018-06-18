@@ -70,8 +70,10 @@ extension DVOrderViewController: UICollectionViewDelegate, UICollectionViewDataS
     func didTapItem(_ sender: WillSelectCell) {
         guard let item = sender.itemInfo else { return }
         selectedItems.append(item)
+        customizedItems.append(CustomizedItem(name: item.name, iced: true, sugar: true))
         tableView.reloadData()
     }
+    
 }
 
 extension DVOrderViewController: UICollectionViewDelegateFlowLayout {
@@ -87,7 +89,7 @@ extension DVOrderViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, ConfirmCellDelegate {
+extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, ConfirmCellDelegate, DidSelecteCellDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -108,6 +110,7 @@ extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, Con
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DidSelectCell.self), for: indexPath) as? DidSelectCell else { return UITableViewCell() }
             cell.itemImage.sd_setImage(with: URL(string: selectedItems[indexPath.row].image), placeholderImage: #imageLiteral(resourceName: "add-shopping-cart"))
             cell.nameLabel.text = selectedItems[indexPath.row].name
+            cell.delegate = self
             return cell
         default:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConfirmCell.self), for: indexPath) as? ConfirmCell else { return UITableViewCell() }
@@ -120,7 +123,34 @@ extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, Con
         return 90
     }
     
+    func icedDidTapped(_ sender: DidSelectCell) {
+        guard let tappedIndexPath = tableView.indexPath(for: sender) else { return }
+        customizedItems[tappedIndexPath.row].iced = true
+    }
+    
+    func hotDidTapped(_ sender: DidSelectCell) {
+        guard let tappedIndexPath = tableView.indexPath(for: sender) else { return }
+        customizedItems[tappedIndexPath.row].iced = false
+    }
+    
+    func yesSugarDidTapped(_ sender: DidSelectCell) {
+        guard let tappedIndexPath = tableView.indexPath(for: sender) else { return }
+        customizedItems[tappedIndexPath.row].sugar = true
+    }
+    
+    func noSugarDidTapped(_ sender: DidSelectCell) {
+        guard let tappedIndexPath = tableView.indexPath(for: sender) else { return }
+        customizedItems[tappedIndexPath.row].sugar = false
+    }
+    
     func confirmButtonPressed(_ sender: ConfirmCell) {
         performSegue(withIdentifier: "toDetail", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail" {
+            guard let controller = segue.destination as? DVDetailViewController else { return }
+            controller.customizedItems = customizedItems
+        }
     }
 }

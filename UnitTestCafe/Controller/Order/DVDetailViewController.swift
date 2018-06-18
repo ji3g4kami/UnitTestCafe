@@ -10,10 +10,11 @@ import UIKit
 
 class DVDetailViewController: UIViewController {
 
+    lazy var customizedItems = [CustomizedItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        print(customizedItems)
     }
 
 }

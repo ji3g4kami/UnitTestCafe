@@ -48,7 +48,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM3-Jo-ftI" customClass="DLRadioButton">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM3-Jo-ftI" customClass="DLRadioButton">
                                 <rect key="frame" x="70" y="25" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="niY-Sz-N6s"/>
@@ -73,6 +73,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="icedTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wKU-aa-pGS"/>
                                     <outletCollection property="otherButtons" destination="ePc-TW-qkj" id="NBW-St-92T"/>
                                 </connections>
                             </button>
@@ -100,8 +101,11 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="hotTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3co-tL-dVC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRr-7n-ILf" customClass="DLRadioButton">
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRr-7n-ILf" customClass="DLRadioButton">
                                 <rect key="frame" x="67" y="52" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="4pf-Ej-lpa"/>
@@ -126,10 +130,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="yesSugarTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rf8-5c-dQS"/>
                                     <outletCollection property="otherButtons" destination="xt2-xs-PVD" id="PUR-FJ-19w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt2-xs-PVD" customClass="DLRadioButton">
+                            <button opaque="NO" tag="40" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt2-xs-PVD" customClass="DLRadioButton">
                                 <rect key="frame" x="140" y="52" width="65" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="f0X-Ej-obz"/>
@@ -153,6 +158,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="noSugarTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S39-Cu-CZX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

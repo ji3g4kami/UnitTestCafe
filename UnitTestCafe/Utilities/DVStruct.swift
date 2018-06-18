@@ -16,6 +16,6 @@ struct Item: Codable {
 
 struct CustomizedItem {
     let name: String
-    let iced: Bool
-    let sugar: Bool
+    var iced: Bool
+    var sugar: Bool
 }
