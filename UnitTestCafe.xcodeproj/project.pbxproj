@@ -26,6 +26,8 @@
 		142BC96220D778B900422B2D /* DidSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC96020D778B900422B2D /* DidSelectCell.swift */; };
 		142BC96320D778B900422B2D /* DidSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142BC96120D778B900422B2D /* DidSelectCell.xib */; };
 		142BC96720D7830E00422B2D /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BC96520D7830D00422B2D /* DLRadioButton.m */; };
+		142BC96A20D7903500422B2D /* ConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC96820D7903500422B2D /* ConfirmCell.swift */; };
+		142BC96B20D7903500422B2D /* ConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142BC96920D7903500422B2D /* ConfirmCell.xib */; };
 		4F369AD31BD99DBA946E2B3E /* Pods_UnitTestCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A901F0CFDCEFA133D6EFD16 /* Pods_UnitTestCafe.framework */; };
 		57DC03FE93B63E21792612CC /* Pods_UnitTestCafeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D21690EBB8C72DF01C3317E /* Pods_UnitTestCafeTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +67,8 @@
 		142BC96420D7830C00422B2D /* UnitTestCafe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTestCafe-Bridging-Header.h"; sourceTree = "<group>"; };
 		142BC96520D7830D00422B2D /* DLRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRadioButton.m; sourceTree = "<group>"; };
 		142BC96620D7830E00422B2D /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
+		142BC96820D7903500422B2D /* ConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCell.swift; sourceTree = "<group>"; };
+		142BC96920D7903500422B2D /* ConfirmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCell.xib; sourceTree = "<group>"; };
 		4B641D4F0888EC75E86123A6 /* Pods-UnitTestCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestCafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestCafe/Pods-UnitTestCafe.debug.xcconfig"; sourceTree = "<group>"; };
 		58B4CF9CA9995EFA87AA0C04 /* Pods-UnitTestCafeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestCafeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestCafeTests/Pods-UnitTestCafeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A901F0CFDCEFA133D6EFD16 /* Pods_UnitTestCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +213,8 @@
 				142BC95720D75AA600422B2D /* WillSelectCell.xib */,
 				142BC96020D778B900422B2D /* DidSelectCell.swift */,
 				142BC96120D778B900422B2D /* DidSelectCell.xib */,
+				142BC96820D7903500422B2D /* ConfirmCell.swift */,
+				142BC96920D7903500422B2D /* ConfirmCell.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -327,6 +333,7 @@
 				142BC96320D778B900422B2D /* DidSelectCell.xib in Resources */,
 				142BC92D20D7435C00422B2D /* Assets.xcassets in Resources */,
 				142BC92B20D7435900422B2D /* Main.storyboard in Resources */,
+				142BC96B20D7903500422B2D /* ConfirmCell.xib in Resources */,
 				142BC94F20D755BC00422B2D /* Detail.storyboard in Resources */,
 				142BC95920D75AA600422B2D /* WillSelectCell.xib in Resources */,
 			);
@@ -462,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BC96A20D7903500422B2D /* ConfirmCell.swift in Sources */,
 				142BC92820D7435900422B2D /* TabBarViewController.swift in Sources */,
 				142BC92620D7435900422B2D /* AppDelegate.swift in Sources */,
 				142BC95E20D75FC000422B2D /* FirebaseManager.swift in Sources */,
@@ -635,7 +643,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafe/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "UnitTestCafe/Utilities/UnitTestCafe-Bridging-Header.h";
@@ -654,7 +665,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafe/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "UnitTestCafe/Utilities/UnitTestCafe-Bridging-Header.h";
@@ -672,7 +686,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -690,7 +708,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

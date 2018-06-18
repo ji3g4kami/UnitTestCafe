@@ -44,6 +44,8 @@ class DVOrderViewController: UIViewController {
         tableView.dataSource = self
         let xib = UINib(nibName: String(describing: DidSelectCell.self), bundle: nil)
         tableView.register(xib, forCellReuseIdentifier: String(describing: DidSelectCell.self))
+        let confirmXib = UINib(nibName: String(describing: ConfirmCell.self), bundle: nil)
+        tableView.register(confirmXib, forCellReuseIdentifier: String(describing: ConfirmCell.self))
     }
 
 }
@@ -84,19 +86,41 @@ extension DVOrderViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource {
+extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, ConfirmCellDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedItems.count
+        switch section {
+        case 0:
+            return selectedItems.count
+        default:
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DidSelectCell.self), for: indexPath) as? DidSelectCell else { return UITableViewCell() }
-        cell.itemImage.sd_setImage(with: URL(string: selectedItems[indexPath.row].image), placeholderImage: #imageLiteral(resourceName: "add-shopping-cart"))
-        cell.nameLabel.text = selectedItems[indexPath.row].name
-        return cell
+        switch indexPath.section {
+        case 0:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: DidSelectCell.self), for: indexPath) as? DidSelectCell else { return UITableViewCell() }
+            cell.itemImage.sd_setImage(with: URL(string: selectedItems[indexPath.row].image), placeholderImage: #imageLiteral(resourceName: "add-shopping-cart"))
+            cell.nameLabel.text = selectedItems[indexPath.row].name
+            return cell
+        default:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ConfirmCell.self), for: indexPath) as? ConfirmCell else { return UITableViewCell() }
+            cell.delegate = self
+            return cell
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
+    }
+    
+    func confirmButtonPressed(_ sender: ConfirmCell) {
+        print(selectedItems)
     }
 }
