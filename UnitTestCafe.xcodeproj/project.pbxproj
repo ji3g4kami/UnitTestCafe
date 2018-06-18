@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		142BC92620D7435900422B2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC92520D7435900422B2D /* AppDelegate.swift */; };
-		142BC92820D7435900422B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC92720D7435900422B2D /* ViewController.swift */; };
+		142BC92820D7435900422B2D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC92720D7435900422B2D /* TabBarViewController.swift */; };
 		142BC92B20D7435900422B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC92920D7435900422B2D /* Main.storyboard */; };
 		142BC92D20D7435C00422B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142BC92C20D7435C00422B2D /* Assets.xcassets */; };
 		142BC93020D7435C00422B2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC92E20D7435C00422B2D /* LaunchScreen.storyboard */; };
 		142BC93B20D7435C00422B2D /* UnitTestCafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC93A20D7435C00422B2D /* UnitTestCafeTests.swift */; };
 		142BC94620D7492700422B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94520D7492700422B2D /* GoogleService-Info.plist */; };
 		142BC94720D7492700422B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94520D7492700422B2D /* GoogleService-Info.plist */; };
+		142BC94D20D7558400422B2D /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94C20D7558400422B2D /* Order.storyboard */; };
+		142BC94F20D755BC00422B2D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94E20D755BC00422B2D /* Detail.storyboard */; };
+		142BC95220D757A900422B2D /* DVOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95120D757A900422B2D /* DVOrderViewController.swift */; };
+		142BC95520D7583B00422B2D /* DVDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95420D7583B00422B2D /* DVDetailViewController.swift */; };
 		4674A45001EFB1CA65FD2E38 /* Pods_UnitTestCafeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCD10DC75E76D9B014E4F4E /* Pods_UnitTestCafeTests.framework */; };
 		6042B0E6D2FF14D2DFD997F2 /* Pods_UnitTestCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1F31DE056474ABE4F7024D /* Pods_UnitTestCafe.framework */; };
 /* End PBXBuildFile section */
@@ -32,7 +36,7 @@
 /* Begin PBXFileReference section */
 		142BC92220D7435900422B2D /* UnitTestCafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestCafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		142BC92520D7435900422B2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		142BC92720D7435900422B2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		142BC92720D7435900422B2D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		142BC92A20D7435900422B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		142BC92C20D7435C00422B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		142BC92F20D7435C00422B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +45,10 @@
 		142BC93A20D7435C00422B2D /* UnitTestCafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestCafeTests.swift; sourceTree = "<group>"; };
 		142BC93C20D7435C00422B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		142BC94520D7492700422B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		142BC94C20D7558400422B2D /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
+		142BC94E20D755BC00422B2D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		142BC95120D757A900422B2D /* DVOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVOrderViewController.swift; sourceTree = "<group>"; };
+		142BC95420D7583B00422B2D /* DVDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDetailViewController.swift; sourceTree = "<group>"; };
 		2FFE8C5964D7C76EC1B16063 /* Pods-UnitTestCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestCafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestCafe/Pods-UnitTestCafe.debug.xcconfig"; sourceTree = "<group>"; };
 		4C1F31DE056474ABE4F7024D /* Pods_UnitTestCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCD10DC75E76D9B014E4F4E /* Pods_UnitTestCafeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestCafeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,11 +109,12 @@
 		142BC92420D7435900422B2D /* UnitTestCafe */ = {
 			isa = PBXGroup;
 			children = (
+				142BC94920D754F100422B2D /* Model */,
+				142BC94A20D754FB00422B2D /* View */,
+				142BC94B20D7550000422B2D /* Controller */,
+				142BC94820D754D900422B2D /* Storyboard */,
 				142BC92520D7435900422B2D /* AppDelegate.swift */,
-				142BC92720D7435900422B2D /* ViewController.swift */,
-				142BC92920D7435900422B2D /* Main.storyboard */,
 				142BC92C20D7435C00422B2D /* Assets.xcassets */,
-				142BC92E20D7435C00422B2D /* LaunchScreen.storyboard */,
 				142BC94520D7492700422B2D /* GoogleService-Info.plist */,
 				142BC93120D7435C00422B2D /* Info.plist */,
 			);
@@ -119,6 +128,57 @@
 				142BC93C20D7435C00422B2D /* Info.plist */,
 			);
 			path = UnitTestCafeTests;
+			sourceTree = "<group>";
+		};
+		142BC94820D754D900422B2D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				142BC92920D7435900422B2D /* Main.storyboard */,
+				142BC92E20D7435C00422B2D /* LaunchScreen.storyboard */,
+				142BC94C20D7558400422B2D /* Order.storyboard */,
+				142BC94E20D755BC00422B2D /* Detail.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		142BC94920D754F100422B2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		142BC94A20D754FB00422B2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		142BC94B20D7550000422B2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				142BC95020D7575D00422B2D /* Order */,
+				142BC95320D7582100422B2D /* Detail */,
+				142BC92720D7435900422B2D /* TabBarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		142BC95020D7575D00422B2D /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				142BC95120D757A900422B2D /* DVOrderViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		142BC95320D7582100422B2D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				142BC95420D7583B00422B2D /* DVDetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		8AAFBF0BF90708AB5E839F9F /* Pods */ = {
@@ -219,10 +279,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142BC94D20D7558400422B2D /* Order.storyboard in Resources */,
 				142BC93020D7435C00422B2D /* LaunchScreen.storyboard in Resources */,
 				142BC94620D7492700422B2D /* GoogleService-Info.plist in Resources */,
 				142BC92D20D7435C00422B2D /* Assets.xcassets in Resources */,
 				142BC92B20D7435900422B2D /* Main.storyboard in Resources */,
+				142BC94F20D755BC00422B2D /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +412,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				142BC92820D7435900422B2D /* ViewController.swift in Sources */,
+				142BC92820D7435900422B2D /* TabBarViewController.swift in Sources */,
 				142BC92620D7435900422B2D /* AppDelegate.swift in Sources */,
+				142BC95220D757A900422B2D /* DVOrderViewController.swift in Sources */,
+				142BC95520D7583B00422B2D /* DVDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,7 +579,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafe/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -531,7 +598,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafe/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -548,7 +618,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -566,7 +640,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = UnitTestCafeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.davidwu.UnitTestCafeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
