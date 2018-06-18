@@ -14,3 +14,8 @@ struct Item: Codable {
     let price: Int
 }
 
+struct CustomizedItem {
+    let name: String
+    let iced: Bool
+    let sugar: Bool
+}

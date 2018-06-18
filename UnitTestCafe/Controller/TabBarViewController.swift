@@ -12,7 +12,7 @@ enum TabBar {
     
     case order
     
-    case detail
+    case list
     
     func controller() -> UIViewController {
         
@@ -21,8 +21,8 @@ enum TabBar {
         case .order:
             return UIStoryboard.orderStoryboard().instantiateInitialViewController()!
             
-        case .detail:
-            return UIStoryboard.detailStoryboard().instantiateInitialViewController()!
+        case .list:
+            return UIStoryboard.listStoryboard().instantiateInitialViewController()!
         }
     }
     
@@ -33,7 +33,7 @@ enum TabBar {
         case .order:
             return #imageLiteral(resourceName: "add-shopping-cart")
 
-        case .detail:
+        case .list:
             return #imageLiteral(resourceName: "clipboard")
         }
     }
@@ -44,8 +44,8 @@ enum TabBar {
         case .order:
             return "order"
             
-        case .detail:
-            return "detail"
+        case .list:
+            return "list"
         }
     }
     
@@ -56,7 +56,7 @@ enum TabBar {
         case .order:
             return #imageLiteral(resourceName: "add-shopping-cart").withRenderingMode(.alwaysTemplate)
             
-        case .detail:
+        case .list:
             return #imageLiteral(resourceName: "clipboard").withRenderingMode(.alwaysTemplate)
         }
     }
@@ -64,7 +64,7 @@ enum TabBar {
 
 class TabBarViewController: UITabBarController {
     
-    var tabs: [TabBar] = [.order, .detail]
+    var tabs: [TabBar] = [.order, .list]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,8 +110,8 @@ extension UIStoryboard {
         return UIStoryboard(name: "Order", bundle: nil)
     }
     
-    static func detailStoryboard() -> UIStoryboard {
+    static func listStoryboard() -> UIStoryboard {
         
-        return UIStoryboard(name: "Detail", bundle: nil)
+        return UIStoryboard(name: "List", bundle: nil)
     }
 }

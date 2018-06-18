@@ -68,15 +68,34 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zwJ-XP-6CL"/>
                     </view>
-                    <navigationItem key="navigationItem" title="AWS Cafe" id="NgO-8m-Ii0"/>
+                    <navigationItem key="navigationItem" title="AWS Cafe" id="NgO-8m-Ii0">
+                        <barButtonItem key="backBarButtonItem" title=" " id="PvZ-hd-GmA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="kEG-g7-fTO" id="nnc-M0-lce"/>
                         <outlet property="tableView" destination="MDt-Vq-sLI" id="J7b-j5-ATR"/>
+                        <segue destination="mhk-Ed-fmE" kind="show" identifier="toDetail" id="E5Q-k8-05A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVC-Xc-5wR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="935.20000000000005" y="205.54722638680661"/>
+        </scene>
+        <!--AWS Cafe-->
+        <scene sceneID="2My-pO-KZN">
+            <objects>
+                <viewController id="mhk-Ed-fmE" customClass="DVDetailViewController" customModule="UnitTestCafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jrd-VM-CjW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YYD-3o-JJf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AWS Cafe" id="WlK-3y-PXa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lIt-wc-isN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="206"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pzA-Vg-njx">

@@ -16,9 +16,9 @@
 		142BC94620D7492700422B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94520D7492700422B2D /* GoogleService-Info.plist */; };
 		142BC94720D7492700422B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94520D7492700422B2D /* GoogleService-Info.plist */; };
 		142BC94D20D7558400422B2D /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94C20D7558400422B2D /* Order.storyboard */; };
-		142BC94F20D755BC00422B2D /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94E20D755BC00422B2D /* Detail.storyboard */; };
+		142BC94F20D755BC00422B2D /* List.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142BC94E20D755BC00422B2D /* List.storyboard */; };
 		142BC95220D757A900422B2D /* DVOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95120D757A900422B2D /* DVOrderViewController.swift */; };
-		142BC95520D7583B00422B2D /* DVDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95420D7583B00422B2D /* DVDetailViewController.swift */; };
+		142BC95520D7583B00422B2D /* DVListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95420D7583B00422B2D /* DVListViewController.swift */; };
 		142BC95820D75AA600422B2D /* WillSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95620D75AA600422B2D /* WillSelectCell.swift */; };
 		142BC95920D75AA600422B2D /* WillSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142BC95720D75AA600422B2D /* WillSelectCell.xib */; };
 		142BC95C20D75ED000422B2D /* DVStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC95B20D75ED000422B2D /* DVStruct.swift */; };
@@ -28,6 +28,7 @@
 		142BC96720D7830E00422B2D /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 142BC96520D7830D00422B2D /* DLRadioButton.m */; };
 		142BC96A20D7903500422B2D /* ConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC96820D7903500422B2D /* ConfirmCell.swift */; };
 		142BC96B20D7903500422B2D /* ConfirmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142BC96920D7903500422B2D /* ConfirmCell.xib */; };
+		142BC96F20D79E5400422B2D /* DVDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142BC96E20D79E5400422B2D /* DVDetailViewController.swift */; };
 		4F369AD31BD99DBA946E2B3E /* Pods_UnitTestCafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A901F0CFDCEFA133D6EFD16 /* Pods_UnitTestCafe.framework */; };
 		57DC03FE93B63E21792612CC /* Pods_UnitTestCafeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D21690EBB8C72DF01C3317E /* Pods_UnitTestCafeTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,9 +56,9 @@
 		142BC93C20D7435C00422B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		142BC94520D7492700422B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		142BC94C20D7558400422B2D /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
-		142BC94E20D755BC00422B2D /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		142BC94E20D755BC00422B2D /* List.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.storyboard; sourceTree = "<group>"; };
 		142BC95120D757A900422B2D /* DVOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVOrderViewController.swift; sourceTree = "<group>"; };
-		142BC95420D7583B00422B2D /* DVDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDetailViewController.swift; sourceTree = "<group>"; };
+		142BC95420D7583B00422B2D /* DVListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVListViewController.swift; sourceTree = "<group>"; };
 		142BC95620D75AA600422B2D /* WillSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WillSelectCell.swift; sourceTree = "<group>"; };
 		142BC95720D75AA600422B2D /* WillSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WillSelectCell.xib; sourceTree = "<group>"; };
 		142BC95B20D75ED000422B2D /* DVStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVStruct.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		142BC96620D7830E00422B2D /* DLRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRadioButton.h; sourceTree = "<group>"; };
 		142BC96820D7903500422B2D /* ConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmCell.swift; sourceTree = "<group>"; };
 		142BC96920D7903500422B2D /* ConfirmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmCell.xib; sourceTree = "<group>"; };
+		142BC96E20D79E5400422B2D /* DVDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DVDetailViewController.swift; sourceTree = "<group>"; };
 		4B641D4F0888EC75E86123A6 /* Pods-UnitTestCafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestCafe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestCafe/Pods-UnitTestCafe.debug.xcconfig"; sourceTree = "<group>"; };
 		58B4CF9CA9995EFA87AA0C04 /* Pods-UnitTestCafeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestCafeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestCafeTests/Pods-UnitTestCafeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A901F0CFDCEFA133D6EFD16 /* Pods_UnitTestCafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestCafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +150,7 @@
 				142BC92920D7435900422B2D /* Main.storyboard */,
 				142BC92E20D7435C00422B2D /* LaunchScreen.storyboard */,
 				142BC94C20D7558400422B2D /* Order.storyboard */,
-				142BC94E20D755BC00422B2D /* Detail.storyboard */,
+				142BC94E20D755BC00422B2D /* List.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -173,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				142BC95020D7575D00422B2D /* Order */,
-				142BC95320D7582100422B2D /* Detail */,
+				142BC95320D7582100422B2D /* List */,
 				142BC92720D7435900422B2D /* TabBarViewController.swift */,
 			);
 			path = Controller;
@@ -183,16 +185,17 @@
 			isa = PBXGroup;
 			children = (
 				142BC95120D757A900422B2D /* DVOrderViewController.swift */,
+				142BC96E20D79E5400422B2D /* DVDetailViewController.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
 		};
-		142BC95320D7582100422B2D /* Detail */ = {
+		142BC95320D7582100422B2D /* List */ = {
 			isa = PBXGroup;
 			children = (
-				142BC95420D7583B00422B2D /* DVDetailViewController.swift */,
+				142BC95420D7583B00422B2D /* DVListViewController.swift */,
 			);
-			path = Detail;
+			path = List;
 			sourceTree = "<group>";
 		};
 		142BC95A20D75EB100422B2D /* Utilities */ = {
@@ -334,7 +337,7 @@
 				142BC92D20D7435C00422B2D /* Assets.xcassets in Resources */,
 				142BC92B20D7435900422B2D /* Main.storyboard in Resources */,
 				142BC96B20D7903500422B2D /* ConfirmCell.xib in Resources */,
-				142BC94F20D755BC00422B2D /* Detail.storyboard in Resources */,
+				142BC94F20D755BC00422B2D /* List.storyboard in Resources */,
 				142BC95920D75AA600422B2D /* WillSelectCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +480,8 @@
 				142BC96720D7830E00422B2D /* DLRadioButton.m in Sources */,
 				142BC95220D757A900422B2D /* DVOrderViewController.swift in Sources */,
 				142BC95820D75AA600422B2D /* WillSelectCell.swift in Sources */,
-				142BC95520D7583B00422B2D /* DVDetailViewController.swift in Sources */,
+				142BC96F20D79E5400422B2D /* DVDetailViewController.swift in Sources */,
+				142BC95520D7583B00422B2D /* DVListViewController.swift in Sources */,
 				142BC96220D778B900422B2D /* DidSelectCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

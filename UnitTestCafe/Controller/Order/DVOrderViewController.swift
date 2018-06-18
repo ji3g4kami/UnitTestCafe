@@ -16,6 +16,7 @@ class DVOrderViewController: UIViewController {
 
     var menuItemArray = [Item]()
     var selectedItems = [Item]()
+    var customizedItems = [CustomizedItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,7 +114,6 @@ extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, Con
             cell.delegate = self
             return cell
         }
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -121,6 +121,6 @@ extension DVOrderViewController: UITableViewDelegate, UITableViewDataSource, Con
     }
     
     func confirmButtonPressed(_ sender: ConfirmCell) {
-        print(selectedItems)
+        performSegue(withIdentifier: "toDetail", sender: nil)
     }
 }
